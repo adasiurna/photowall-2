@@ -21,12 +21,12 @@ class Main extends Component {
       <h1>
         <Link to="/">Photowall</Link>
       </h1>
-      <Route exact path="/photowall-2/" render={() => (
+      <Route exact path="/" render={() => (
         <div>
           <PhotoWall {...this.props} />
         </div>
       )} />
-      <Route path="/photowall-2/AddPhoto" render={({ history }) => (
+      <Route path="/AddPhoto" render={({ history }) => (
         <AddPhoto {...this.props} />
       )} />
 
